@@ -1,0 +1,42 @@
+header {
+  width: 1024px;
+  max-width: 1024px;
+  height: 10vw;
+  background-color: blue;
+  left: 45.4px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px 0 10px;
+  gap: 0px;
+  border: 0px 0px 3px 0px;
+  justify-content: space-between;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.text-open_music {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: left;
+}
+
+.theme-button {
+  margin-right: 10px; 
+}
+
+.img-moon {
+  width: 44px;
+  height: 36px;
+  gap: 0px;
+  padding: 9px 10px 9px 10px;
+  opacity: 0px;
+  background-color: var(--gray-6);
+  background-image: url("../assets/icons/moon-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}

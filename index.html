@@ -4,29 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Music</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <script src="./src/scripts/index.js" defer></script>
   </head>
-  <body>
-    <!-- CABEÇALHO -->
-    <header>
-      <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
-    </header>
+  <body class="app-container">
+    <div class="container_geral">
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-      <!-- SEÇÃO DE FILTRO POR GENERO -->
-      <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-      </section>
+      <header>
+        <h3 class="text-open_music">open music</h3>
+        <div class="theme-button">
+          <!-- <img
+          src="./src/assets/icons/moon-icon.svg"
+            class="img-moon"
+            alt="icone da lua"
+          /> -->
+          <button class="img-moon"></button>
+        </div>
+      </header>
 
-      <!-- SEÇÃO DE FILTRO POR PREÇO -->
-      <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-      </section>
+      <main>
+        <!-- SEÇÃO DE FILTRO POR GENERO -->
+        <section class="gener_filter">
+          <h3>Genero Musical</h3>
+          <ul>
+            <li class="button_gener">Todos</li>
+            <li class="button_gener">Pop</li>
+            <li class="button_gener">MPB</li>
+            <li class="button_gener">Forró</li>
+            <li class="button_gener">Samba</li>
+            <li class="button_gener">Rock</li>
+            <li class="button_gener">Rap</li>
+            <li class="button_gener">Hip-hop</li>
+          </ul>
+        </section>
 
-      <!-- SEÇÃO DE ALBUNS -->
-      <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-      </section>
-    </main>
+        <!-- SEÇÃO DE FILTRO POR PREÇO -->
+        <section class="price_filter-section">
+          <div class="price_filter-section__title">
+            <h3>Definir preço</h3>
+            <h3>Até R$100,00</h3>
+          </div>
+          <div>
+            <input
+              class="price_filter-section__input_range"
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="100"
+            />
+          </div>
+
+          <label for="volume"></label>
+        </section>
+        <ul class="containet_albunsList">
+          <li class="albunsList">
+            <img src="./src/assets/imgs/Album Cover (1).svg" alt="" />
+            <p>album :</p>
+            <p>banda</p>
+            <p>valor</p>
+            <button>comprar</button>
+          </li>
+          <li class="albunsList">
+            <img src="./src/assets/imgs/Album Cover (2).svg" alt="" />
+            <p>album :</p>
+            <p>banda</p>
+            <p>valor</p>
+            <button>comprar</button>
+          </li>
+          <li class="albunsList">
+            <img src="./src/assets/imgs/Album Cover (3).svg" alt="" />
+            <p>album :</p>
+            <p>banda</p>
+            <p>valor</p>
+            <button>comprar</button>
+          </li>
+        </ul>
+
+        <section>
+          <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        </section>
+      </main>
+
+
+    </div>
   </body>
 </html>
