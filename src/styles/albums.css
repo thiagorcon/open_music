@@ -1,1 +1,65 @@
-/* estilizar album */
+.container_albunsList {
+  width: 1024px;
+  height: 1032px;
+  padding: 32px 0px 32px 0px;
+  gap: 30px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--gray-7);
+}
+
+.section_albuns_list {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 45px;
+}
+
+.space_band_cat{
+  display: flex;
+  justify-content: space-between;
+}
+
+.albunList {
+  width: 308px;
+  height: 455px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  justify-content: space-between;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price_comprar {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 87px;
+  height: 40px;
+  padding: 20px 10px 20px 10px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: var(--brand-2);
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--brand-1); /* Muda a cor de fundo do botão quando passado o mouse */
+  
+}
+
+.albumImage {
+  width: 100%;
+  height: auto; /* Altura automática para manter as proporções */
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço do contêiner */
+}
+

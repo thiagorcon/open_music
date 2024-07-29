@@ -7,36 +7,56 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
     <script src="./src/scripts/index.js" defer></script>
   </head>
-  <body class="app-container">
+  <body >
     <div class="container_geral">
 
       <header>
-        <h3 class="text-open_music">open music</h3>
+        
+
+        <h3 class="text-open_music"><span>o</span>pen <span>m</span>usic</h3></span>
         <div class="theme-button">
           <!-- <img
           src="./src/assets/icons/moon-icon.svg"
             class="img-moon"
             alt="icone da lua"
           /> -->
-          <button class="img-moon"></button>
+          <button class="img-moon"></button>        
         </div>
       </header>
 
       <main>
         <!-- SEÇÃO DE FILTRO POR GENERO -->
         <section class="gener_filter">
-          <h3>Genero Musical</h3>
+          <h3>Gênero Musical</h3>
           <ul>
-            <li class="button_gener">Todos</li>
-            <li class="button_gener">Pop</li>
-            <li class="button_gener">MPB</li>
-            <li class="button_gener">Forró</li>
-            <li class="button_gener">Samba</li>
-            <li class="button_gener">Rock</li>
-            <li class="button_gener">Rap</li>
-            <li class="button_gener">Hip-hop</li>
+            <li class="button_gener">
+              <button class="genre-button1" data-genre="Todos">Todos</button>
+            </li>
+            <li class="button_gener">
+              <button class="genre-button" data-genre="Pop">Pop</button>
+            </li>
+                        <li class="button_gener">
+              <button class="genre-button" data-genre="Forró">MPB</button>
+            </li>
+            <li class="button_gener">
+              <button class="genre-button" data-genre="Samba">Samba</button>
+            </li>
+            <li class="button_gener">
+              <button class="genre-button" data-genre="Rock">Rap</button>
+            </li>
+            <li class="button_gener">
+              <button class="genre-button" data-genre="Rap">Hip-hop</button>
+            </li>
+            <li class="button_gener">
+              <button class="genre-button" data-genre="Hip-hop">Rock</button>
+            </li>
+            <li class="button_gener">
+              <button class="genre-button" data-genre="MPB">Reggae</button>
+            </li>
           </ul>
         </section>
+        
+        
 
         <!-- SEÇÃO DE FILTRO POR PREÇO -->
         <section class="price_filter-section">
@@ -48,39 +68,101 @@
             <input
               class="price_filter-section__input_range"
               type="range"
-              id="volume"
+              id="price_range"
               name="volume"
               min="0"
               max="100"
             />
           </div>
 
-          <label for="volume"></label>
+          <label for="price_range"></label>
         </section>
-        <ul class="containet_albunsList">
-          <li class="albunsList">
-            <img src="./src/assets/imgs/Album Cover (1).svg" alt="" />
-            <p>album :</p>
-            <p>banda</p>
-            <p>valor</p>
-            <button>comprar</button>
-          </li>
-          <li class="albunsList">
-            <img src="./src/assets/imgs/Album Cover (2).svg" alt="" />
-            <p>album :</p>
-            <p>banda</p>
-            <p>valor</p>
-            <button>comprar</button>
-          </li>
-          <li class="albunsList">
-            <img src="./src/assets/imgs/Album Cover (3).svg" alt="" />
-            <p>album :</p>
-            <p>banda</p>
-            <p>valor</p>
-            <button>comprar</button>
-          </li>
-        </ul>
+        
+        <section class="container_albunsList">
+          <div>
+            <h1>Albuns Encontrados</h1>
+          </div>
+          <ul class="section_albuns_list">
+            <li class="albunList">
+              <img class="albumImage" src="./src/assets/imgs/Album Cover (1).svg" alt="" />
+              <p>album :</p>
+              <div class="space_band_cat">
+                <p>banda</p>
+              <p>categoria</p>
+              </div>
+              
+              <div class="price_comprar">
+                <p>valor</p>
+              <button>comprar</button>
+              </div>
+            </li>
+            <li class="albunList">
+              <img class="albumImage" src="./src/assets/imgs/Album Cover (2).svg" alt="" />
+              <p>album :</p>
+              <div class="space_band_cat">
+                <p>banda</p>
+              <p>categoria</p>
+              </div>
+              <div class="price_comprar">
+                <p>valor</p>
+              <button>comprar</button>
+              </div>
+            </li>
+            <li class="albunList">
+              <img class="albumImage" src="./src/assets/imgs/Album Cover (3).svg" alt="" />
+              <p>album :</p>
+              <div class="space_band_cat">
+                <p>banda</p>
+              <p>categoria</p>
+              </div>
+              <div class="price_comprar">
+                <p>valor</p>
+              <button>comprar</button>
+              </div>
+            </li>
+          </ul>
 
+          <ul class="section_albuns_list">
+            <li class="albunList">
+              <img class="albumImage"  src="./src/assets/imgs/Album Cover (1).svg" alt="" />
+              <p>album :</p>
+              <div class="space_band_cat">
+                <p>banda</p>
+              <p>categoria</p>
+              </div>
+              <div class="price_comprar">
+                <p>valor</p>
+              <button>comprar</button>
+              </div>
+            </li>
+            <li class="albunList">
+              <img class="albumImage" src="./src/assets/imgs/Album Cover (2).svg" alt="" />
+              <p>album :</p>
+              <div class="space_band_cat">
+                <p>banda</p>
+              <p>categoria</p>
+              </div>
+              <div class="price_comprar">
+                <p>valor</p>
+              <button>comprar</button>
+              </div>
+            </li>
+            <li class="albunList">
+              <img class="albumImage" src="./src/assets/imgs/Album Cover (3).svg" alt="" />
+              <p>album :</p>
+              <div class="space_band_cat">
+                <p>banda</p>
+              <p>categoria</p>
+              </div>
+              <div class="price_comprar">
+                <p>valor</p>
+              <button>comprar</button>
+              </div>
+            </li>
+          </ul>
+
+  
+        </section>
         <section>
           <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
         </section>

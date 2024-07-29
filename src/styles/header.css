@@ -1,9 +1,9 @@
 header {
   width: 1024px;
   max-width: 1024px;
-  height: 10vw;
-  background-color: blue;
-  left: 45.4px;
+  height: 144px;
+
+  margin-left: 45.4px;
   padding: 0px 0px 0px 0px;
   margin: 0px 10px 0 10px;
   gap: 0px;
@@ -11,7 +11,16 @@ header {
   justify-content: space-between;
   opacity: 0px;
   display: flex;
+
   align-items: center;
+  border-bottom: 2px solid var(--brand-1);
+  position: fixed;
+  /* position: relative; */
+  top: 0;
+  z-index: 1000;
+  
+  /* margin-left: 750px; */
+  background-color: var(--gray-8);
 }
 
 .text-open_music {
@@ -23,7 +32,7 @@ header {
 }
 
 .theme-button {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .img-moon {
@@ -39,4 +48,23 @@ header {
   display: flex;
   justify-content: center;
   border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  header{
+    width: 100%;  }
+}
+
+@media (max-width: 768px) {
+  header{
+    width: 100%;  
+}
+  
+}
+
+@media (max-width: 480px) {
+  header{
+    width: 100%;  
+}
+  
 }
