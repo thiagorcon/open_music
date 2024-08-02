@@ -12,8 +12,10 @@
 
 .section_albuns_list {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 45px;
+  justify-content: space-around; 
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 5px;
 }
 
 .space_band_cat{
@@ -30,6 +32,7 @@
   opacity: 0px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .price_comprar {
@@ -61,5 +64,9 @@ button:hover {
   width: 100%;
   height: auto; /* Altura automática para manter as proporções */
   object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço do contêiner */
+
+  width: 19.25rem;
+  height: 18.125rem;
+
 }
 

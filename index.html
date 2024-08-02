@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Music</title>
     <link rel="stylesheet" href="./src/styles/index.css" />
-    <script src="./src/scripts/index.js" defer></script>
+    <script type="module"  src="./src/scripts/index.js" defer></script>
+    <script src="./src/scripts/inputRange.js" defer></script>
+    
   </head>
   <body >
     <div class="container_geral">
@@ -25,7 +27,7 @@
       </header>
 
       <main>
-        <!-- SEÇÃO DE FILTRO POR GENERO -->
+        
         <section class="gener_filter">
           <h3>Gênero Musical</h3>
           <ul>
@@ -59,7 +61,7 @@
         
 
         <!-- SEÇÃO DE FILTRO POR PREÇO -->
-        <section class="price_filter-section">
+        <!-- <section class="price_filter-section">
           <div class="price_filter-section__title">
             <h3>Definir preço</h3>
             <h3>Até R$100,00</h3>
@@ -69,21 +71,44 @@
               class="price_filter-section__input_range"
               type="range"
               id="price_range"
-              name="volume"
+              name="price"
               min="0"
-              max="100"
+              max="150"  
+              value="150"
+             
             />
           </div>
 
           <label for="price_range"></label>
+        </section> -->
+
+
+        <section class="filter-price">
+          <div class="title-price-one-two">
+            <h2 class="title-price">Definir Preço</h2>
+            <h2 class="title-price-two">
+              Até <span class="span-title-price"> R$100</span>
+            </h2>
+          </div>
+          <div>
+            <input
+            class="barra-price"
+            id="barra_price"
+            type="range"
+            min="0"
+            max="150"
+            value="150"
+          />
+          </div>
         </section>
         
         <section class="container_albunsList">
           <div>
             <h1>Albuns Encontrados</h1>
           </div>
-          <ul class="section_albuns_list">
-            <li class="albunList">
+          <ul class="section_albuns_list">            
+             <!-- <li class="albunList" ></li> -->
+            <!-- <li class="albunList">
               <img class="albumImage" src="./src/assets/imgs/Album Cover (1).svg" alt="" />
               <p>album :</p>
               <div class="space_band_cat">
@@ -158,7 +183,7 @@
                 <p>valor</p>
               <button>comprar</button>
               </div>
-            </li>
+            </li> -->
           </ul>
 
   

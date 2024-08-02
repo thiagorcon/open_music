@@ -25,6 +25,8 @@ body {
   align-items: center; 
   margin-top: 4px;  
   background-color: var(--gray-8);
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
 }
 
 .container_geral {
@@ -43,3 +45,8 @@ body {
 span {
   color: var(--brand-1);
 }
+
+/* img{
+  width: 19.25rem;
+  height: 18.125rem;
+} */

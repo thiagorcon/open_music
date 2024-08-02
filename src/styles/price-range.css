@@ -1,26 +1,82 @@
-.priwce_range{
-/* price-range.css */
 
-/* Selecionando o elemento input range pelo ID */
-#volume {
-     -webkit-appearance: none;
-     appearance: none;
-     background: transparent;
-     cursor: pointer;
-     width: 100%;
-     outline: none;
-     background-color: var(--cor-predominante); /* Defina a cor predominante aqui */
-     border-radius: 0.5rem;
-     height: 0.5rem;
-   }
-   
-   #volume::-webkit-slider-thumb {
-     -webkit-appearance: none;
-     appearance: none;
-     height: 30px;
-     width: 30px;
-     background-color: #fff;
-     border-radius: 50%;
-     border: 0.5rem solid var(--cor-predominante); /* Usando a mesma variável de cor */
-   }
+
+
+
+
+
+
+
+
+
+filter-price{
+  max-width:1024px;
+  height:164px;
+  padding: 32px 0;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  
+}
+
+.barra-price{
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  background-color: var(--brand-1);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.barra-price::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.5rem solid var(--brand-1);
+}
+
+
+.title-price-one-two{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.span-title-price{
+  color:var(--color-brand-2);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.title-price{
+  width: 151px;
+  height: 29px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color:var(--gray-2);
+}
+
+.title-price-two{
+  width : 116px;
+  height: 27px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color:var(--gray-1);
+
+}
+
+
+.title-price-dark-mode{
+  color: var(--gray-6);
 }
