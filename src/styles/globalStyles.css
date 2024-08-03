@@ -13,6 +13,10 @@
   --brand-1: #6f00ff;
   --brand-2: #8629ff;
 
+  --white-1: white;
+  --black-1: black;
+  
+
   font-family: "Inter", sans-serif;
 }
 
@@ -30,14 +34,12 @@ body {
 }
 
 .container_geral {
-  height: auto;
+  width: 1200px;
+  height: 2000px;
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  /* height: auto; */
-  max-width: 1200px;
-  /* min-width: 500px; */
-  /* height: 100vh; */
+   
+  max-width: 1200px;  
   align-items: center;
   background-color: var(--gray-8);
 }

@@ -1,5 +1,8 @@
 import {albumList} from "./albunsDataBase.js";
-//import imagem from"../assets/imgs/Album Cover (1).svg"
+//import { themeChange } from "./theme.js";
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const genreButtons = document.querySelectorAll(".genre-button");
@@ -18,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function albunsList() {
   const albuns = albumList.map((e) => {
+    console.log(e);
+    
       return `
      <li class="albunList">
                <img class="albumImage" src="${e.img}" alt="albuns de musica" />
